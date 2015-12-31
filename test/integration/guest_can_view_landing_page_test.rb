@@ -6,6 +6,7 @@ class GuestCanViewLandingPageTest < ActionDispatch::IntegrationTest
 
     within ".content" do
       assert page.has_css? ".title", "Correspondence"
+      assert page.has_link? "Get Started"
     end
   end
 end
